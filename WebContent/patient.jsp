@@ -94,7 +94,7 @@
 			else if(regex.test(phone)==false){
 				alert("Enter phone number correctly!");
 			}
-			else if(o2<90 && (temp>37.2 || temp<36.1)){
+			else if(o2<95 && (temp>37.2 || temp<36.1)){
 				alert("Data sent to Doctor!");
 				websocket.send(o2+","+temp+","+pulse+","+phone);
 				vital.value="";
